@@ -1,0 +1,38 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-electron
+*.local
+
+# Electron
+out/
+release/
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Build outputs
+build/
+
+# Fonte com licença personal-use-only
+CloisterBlack.ttf
+Personal Use Only-User Terms Agreement.txt
+
+# Arquivos locais do Claude Code
+.claude/

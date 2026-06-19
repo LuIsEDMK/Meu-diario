@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f9e7d6" />
+      <stop offset="100%" stop-color="#f8e3c6" />
+    </linearGradient>
+    <linearGradient id="page-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff8f0" />
+      <stop offset="100%" stop-color="#fff2e8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="256" height="256" rx="56" fill="url(#bg-grad)" />
+  <rect x="42" y="40" width="172" height="176" rx="38" fill="url(#page-grad)" stroke="#cf5f56" stroke-width="14" />
+
+  <path d="M72 88h112" stroke="#cf5f56" stroke-width="12" stroke-linecap="round" />
+  <path d="M72 124h112" stroke="#cf5f56" stroke-width="12" stroke-linecap="round" />
+  <path d="M72 160h96" stroke="#cf5f56" stroke-width="12" stroke-linecap="round" />
+
+  <path d="M70 56h42c8 0 14 6 14 14v4" fill="none" stroke="#cf5f56" stroke-width="12" stroke-linecap="round" />
+  <circle cx="82" cy="64" r="8" fill="#cf5f56" />
+  <circle cx="176" cy="64" r="8" fill="#cf5f56" />
+
+  <path d="M156 126l36-36a10 10 0 0 0-14-14l-36 36-2 20 20-2z" fill="#d36a5d" />
+  <path d="M164 118l22-22" stroke="#f7d1b8" stroke-width="10" stroke-linecap="round" />
+  <path d="M176 130l14-14" stroke="#f7d1b8" stroke-width="10" stroke-linecap="round" />
+
+  <path d="M154 124l6 28 28-6 2-2-30-30-6 10z" fill="#d36a5d" opacity="0.9" />
+  <path d="M164 136l13 13" stroke="#fff5eb" stroke-width="7" stroke-linecap="round" />
+
+  <path d="M72 180l42-24" fill="none" stroke="#f7d1b8" stroke-width="12" stroke-linecap="round" />
+  <path d="M123 86l16-16" fill="none" stroke="#cf5f56" stroke-width="10" stroke-linecap="round" />
+
+  <path d="M178 184l-8 24 24-8 4-20-20 4z" fill="#cf5f56" opacity="0.35" />
+</svg>

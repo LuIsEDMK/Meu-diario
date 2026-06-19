@@ -1,0 +1,222 @@
+@font-face {
+  font-family: 'Caveat';
+  src: url('/fonts/Caveat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Caveat';
+  src: url('/fonts/Caveat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Patrick Hand';
+  src: url('/fonts/PatrickHand-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JMH Typewriter';
+  src: url('/fonts/JMHTypewriter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JMH Typewriter';
+  src: url('/fonts/JMHTypewriter-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JMH Typewriter';
+  src: url('/fonts/JMHTypewriter-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JMH Typewriter';
+  src: url('/fonts/JMHTypewriter-Thin.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Old London';
+  src: url('/fonts/OldLondon.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Old London Alternate';
+  src: url('/fonts/OldLondonAlternate.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+/* ============================================================
+   TEMA: CALIGRAFIA (padrão)
+   ============================================================ */
+:root,
+[data-style="caligrafia"] {
+  --font-heading: 'Caveat', cursive;
+  --font-body: 'Patrick Hand', cursive;
+  --font-weight-heading: 700;
+  --font-size-body: 18px;
+  --letter-spacing-body: 0.3px;
+
+  --bg-app-from: #f0ebe5;
+  --bg-app-to: #e8ddd5;
+  --bg-main: #faf6f1;
+  --bg-sidebar-from: #fff5f0;
+  --bg-sidebar-to: #fef0e8;
+  --bg-paper: #faf6f1;
+  --bg-search: #faf6f1;
+  --bg-input: #ffffff;
+  --bg-entry-tab: #ffffff;
+  --bg-entry-active: #fef0e8;
+
+  --color-accent: #d9534f;
+  --color-accent-shadow: rgba(217, 83, 79, 0.3);
+  --color-accent-glow: rgba(217, 83, 79, 0.1);
+  --color-accent-border: rgba(217, 83, 79, 0.2);
+
+  --color-text: #333333;
+  --color-text-heading: #5d4e45;
+  --color-text-muted: #999999;
+  --color-text-placeholder: #c9b5a8;
+  --color-text-preview: #999999;
+
+  --color-border: #e8d5c4;
+  --color-line: #e8d5c4;
+  --color-margin: #d9534f;
+  --color-scrollbar: #d4c5b9;
+  --color-scrollbar-hover: #bfb0a3;
+
+  --color-selection-bg: #ffd580;
+  --color-selection: #333333;
+
+  --color-dropdown-bg: #ffffff;
+  --color-dropdown-border: #e8d5c4;
+  --color-dropdown-title: #999999;
+  --color-dropdown-item-hover: #fef0e8;
+  --color-option-name: #5d4e45;
+  --color-option-preview: #8a7060;
+}
+
+/* ============================================================
+   TEMA: MÁQUINA DE ESCREVER (sépia / papel envelhecido)
+   ============================================================ */
+[data-style="maquina"],
+[data-style="maquina-negrito"],
+[data-style="maquina-fina"],
+[data-style="maquina-preta"] {
+  --font-heading: 'JMH Typewriter', monospace;
+  --font-body: 'JMH Typewriter', monospace;
+  --font-size-body: 16px;
+  --letter-spacing-body: 1px;
+
+  --bg-app-from: #e8e0cc;
+  --bg-app-to: #ddd5bc;
+  --bg-main: #f2e8d0;
+  --bg-sidebar-from: #efe6cc;
+  --bg-sidebar-to: #e8dfc4;
+  --bg-paper: #f2e8d0;
+  --bg-search: #f2e8d0;
+  --bg-input: #f8f2e0;
+  --bg-entry-tab: #f8f2e0;
+  --bg-entry-active: #e8d8b0;
+
+  --color-accent: #5a3820;
+  --color-accent-shadow: rgba(90, 56, 32, 0.35);
+  --color-accent-glow: rgba(90, 56, 32, 0.12);
+  --color-accent-border: rgba(90, 56, 32, 0.25);
+
+  --color-text: #2a1a0a;
+  --color-text-heading: #3a2414;
+  --color-text-muted: #806040;
+  --color-text-placeholder: #b09070;
+  --color-text-preview: #806040;
+
+  --color-border: #c8b090;
+  --color-line: #d4b888;
+  --color-margin: #8b5a30;
+  --color-scrollbar: #c0a870;
+  --color-scrollbar-hover: #a89060;
+
+  --color-selection-bg: #c8a040;
+  --color-selection: #2a1a0a;
+
+  --color-dropdown-bg: #f8f2e0;
+  --color-dropdown-border: #c8b090;
+  --color-dropdown-title: #806040;
+  --color-dropdown-item-hover: #e8d8b0;
+  --color-option-name: #3a2414;
+  --color-option-preview: #6a4828;
+}
+
+[data-style="maquina"]         { --font-weight-heading: 400; }
+[data-style="maquina-negrito"] { --font-weight-heading: 700; }
+[data-style="maquina-fina"]    { --font-weight-heading: 200; --letter-spacing-body: 1.5px; }
+[data-style="maquina-preta"]   { --font-weight-heading: 900; --letter-spacing-body: 0.5px; }
+
+/* ============================================================
+   TEMA: GÓTICO (escuro / medieval)
+   ============================================================ */
+[data-style="old-london"],
+[data-style="old-london-alt"],
+[data-style="cloister"] {
+  --font-size-body: 15px;
+  --letter-spacing-body: 0.5px;
+  --font-weight-heading: 400;
+
+  --bg-app-from: #0d0d16;
+  --bg-app-to: #0a0a12;
+  --bg-main: #0c0c18;
+  --bg-sidebar-from: #111122;
+  --bg-sidebar-to: #0d0d1a;
+  --bg-paper: #0f0f1e;
+  --bg-search: #0c0c18;
+  --bg-input: #141428;
+  --bg-entry-tab: #141428;
+  --bg-entry-active: #1e1e38;
+
+  --color-accent: #8b1a1a;
+  --color-accent-shadow: rgba(139, 26, 26, 0.5);
+  --color-accent-glow: rgba(139, 26, 26, 0.15);
+  --color-accent-border: rgba(139, 26, 26, 0.35);
+
+  --color-text: #c8c0a8;
+  --color-text-heading: #ddd0b0;
+  --color-text-muted: #605870;
+  --color-text-placeholder: #383050;
+  --color-text-preview: #605870;
+
+  --color-border: #1e1e34;
+  --color-line: #18182c;
+  --color-margin: #5a0a0a;
+  --color-scrollbar: #2a2840;
+  --color-scrollbar-hover: #3a3858;
+
+  --color-selection-bg: #3a1010;
+  --color-selection: #ddd0b0;
+
+  --color-dropdown-bg: #141428;
+  --color-dropdown-border: #1e1e34;
+  --color-dropdown-title: #605870;
+  --color-dropdown-item-hover: #1e1e38;
+  --color-option-name: #ddd0b0;
+  --color-option-preview: #a09080;
+}
+
+[data-style="old-london"]     { --font-heading: 'Old London', serif;          --font-body: 'Old London', serif; }
+[data-style="old-london-alt"] { --font-heading: 'Old London Alternate', serif; --font-body: 'Old London Alternate', serif; }
+[data-style="cloister"]       { --font-heading: 'Old London', serif;           --font-body: 'Old London', serif; }
