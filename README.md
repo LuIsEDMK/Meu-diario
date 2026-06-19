@@ -1,63 +1,61 @@
-# Meu Diário - Desktop Diary Application
+# Meu Diário
 
-A beautiful, lightweight desktop diary application with a paper-like interface. Write your thoughts, memories, and ideas in a nostalgic notebook environment. Fully offline and privacy-focused.
+Aplicativo de diário pessoal para Windows — bonito, leve e 100% offline. Escreva seus pensamentos, registre seu humor e acompanhe sua evolução ao longo do tempo.
 
-## Features
+## Download
 
-- 📓 **Paper-like Interface** - Beautiful ruled paper with red margin line
-- ✍️ **Auto-save** - Automatic saving every 2 seconds with visual feedback
-- 📅 **Entry Management** - Browse, search, and organize all your entries
-- 🔍 **Full-text Search** - Search across all entries with highlighting
-- 😊 **Mood Tags** - Track your mood with emoji tags (😊 😐 😢 😤)
-- 🔐 **100% Private** - All data stored locally, no cloud sync
-- ⚡ **Fast & Lightweight** - Built with Electron and React
-- 🖋️ **Handwriting Fonts** - Caveat and Patrick Hand fonts for authentic feel
+**[⬇️ Baixar Meu Diário Setup 1.0.1.exe](https://github.com/LuIsEDMK/Meu-diario/releases/download/v1.0.1/Meu.Diario.Setup.1.0.1.exe)**
 
-## System Requirements
+Ou veja todas as versões na [página de Releases](https://github.com/LuIsEDMK/Meu-diario/releases).
 
-- Node.js 16+ and npm 7+
-- Windows, macOS, or Linux
+> **Requisito:** Windows 10 ou superior (64-bit). Não é necessário instalar Node.js ou qualquer dependência.
 
-## Installation
+## Funcionalidades
 
-1. Clone the repository:
+- ✍️ **Editor de texto** — escreva suas páginas com múltiplos estilos de fonte
+- 😊 **Humor do dia** — registre como você está se sentindo
+- 🏷️ **Tags** — organize suas páginas com etiquetas personalizadas
+- 📊 **Estatísticas** — acompanhe sua frequência de escrita e sequências
+- 🔍 **Busca** — encontre qualquer página por texto, título ou tag
+- 🔐 **100% privado** — tudo salvo localmente, sem nuvem, sem conta
+
+---
+
+## Para desenvolvedores
+
+### Requisitos
+
+- Node.js 18+ e npm 9+
+- Windows 10+ (64-bit)
+
+### Instalação
+
+1. Clone o repositório:
 ```bash
-git clone <repo-url>
-cd meu-diario
+git clone https://github.com/LuIsEDMK/Meu-diario.git
+cd Meu-diario
 ```
 
-2. Install dependencies:
+2. Instale as dependências:
 ```bash
 npm install
 ```
 
-## Development
+### Desenvolvimento
 
-Start the development server with live reload:
+Inicia o app em modo dev com hot reload:
 
 ```bash
 npm run electron-dev
 ```
 
-This command:
-- Starts Vite dev server on http://localhost:5173
-- Opens the Electron app and automatically connects to the dev server
-- Hot reloads on code changes
-
-## Building
-
-Create a production build:
+### Gerar instalador
 
 ```bash
-npm run build
+npm run electron-build
 ```
 
-This will:
-- Build React app with Vite
-- Compile TypeScript for Electron
-- Package with electron-builder
-
-The built app will be in the `dist` or `out` directory depending on your OS.
+O instalador será gerado em `release/Meu Diário Setup <versão>.exe`.
 
 ## Project Structure
 
